@@ -16,7 +16,7 @@ platforms :ruby do
 end
 
 gem 'haml-rails'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 2.2.0'
 gem 'will_paginate', '~> 3.0.4'
 gem "audited-activerecord", "~> 3.0.0.rc2"
 gem 'inherited_resources'
