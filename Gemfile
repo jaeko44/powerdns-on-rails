@@ -41,8 +41,8 @@ end
 group :test do
   gem "factory_girl_rails", "~> 4.0"
 
-  gem "cucumber-rails", :require => false
+  gem "cucumber-rails", ">= 1.3.0", :require => false
   gem 'mocha', :require => false
-  gem 'webrat'
+  gem 'webrat', '>= 0.7.3'
   gem 'database_cleaner'
 end
