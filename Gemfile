@@ -1,10 +1,10 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.2.21'
+gem 'rails', '~> 4.0.0'
 
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
+  gem 'sass-rails', '>= 4.0.0'
+  gem 'coffee-rails', '>= 4.0.0'
   gem 'uglifier'
 end
 
@@ -15,13 +15,13 @@ platforms :ruby do
   gem 'therubyracer'
 end
 
-gem 'haml-rails'
-gem 'jquery-rails'
+gem 'haml-rails', '>= 0.4'
+gem 'jquery-rails', '>= 2.1.3'
 gem 'will_paginate', '~> 3.0.4'
 gem "audited-activerecord", "~> 3.0.0.rc2"
-gem 'inherited_resources'
-gem 'devise', '~> 2.2.8'
-gem "devise-encryptable"
+gem 'inherited_resources', '>= 1.4.1'
+gem 'devise', '~> 3.0.0'
+gem "devise-encryptable", ">= 0.1.1"
 gem 'rabl'
 gem 'state_machine'
 
@@ -34,14 +34,14 @@ group :development do
 end
 
 group :development, :test do
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 2.13.0"
   gem 'RedCloth', '>= 4.1.1'
 end
 
 group :test do
-  gem "factory_girl_rails", "~> 4.0"
+  gem "factory_girl_rails", "~> 4.2", ">= 4.2.1"
 
-  gem "cucumber-rails", :require => false
+  gem "cucumber-rails", ">= 1.3.0", :require => false
   gem 'mocha', :require => false
   gem 'webrat'
   gem 'database_cleaner'
